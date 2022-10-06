@@ -23,7 +23,8 @@ Activityroute.get("/activity", async (req, res) => {
     res.send(result);
   });
   
-  //PUT : EDIT A USER BY ID
+  // PUT : EDIT A USER BY ID
+  // http://localhost:5000/activities/activity/update/
   
   Activityroute.put("/activity/update/:id", async (req, res) => {
       try {
@@ -35,6 +36,7 @@ Activityroute.get("/activity", async (req, res) => {
     });
   
   //  DELETE : REMOVE A USER BY ID
+  //  http://localhost:5000/activities/activity/delete/
   
   Activityroute.delete("/activity/delete/:id", async (req, res) => {
       try {

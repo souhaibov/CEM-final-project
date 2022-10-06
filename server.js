@@ -18,7 +18,10 @@ app.use(cors())
 // routes
 app.use('/user',require('./routes/user'))
 app.use('/activities',require('./routes/activities'))
-
+app.use('/events',require('./routes/events'))
+app.use('/coachs',require('./routes/coachs'))
+app.use('/managing',require('./routes/managing'))
+app.use('/students',require('./routes/students'))
 
 // server
 const port = process.env.PORT

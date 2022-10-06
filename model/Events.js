@@ -1,9 +1,11 @@
-import React from 'react'
+const mongoose= require('mongoose')
+const EventSchema= new mongoose.Schema({
 
-const Events = () => {
-  return (
-    <div>Events</div>
-  )
-}
+Title:{type:String ,required:true},
+tof:{type:String ,required:true},
+place:{type:String ,required:true},
+Date:{type:String ,required:true},
+Description:{type:String ,required:true},
+})
 
-export default Events
+module.exports=mongoose.model('Events', EventSchema)
